@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>My Project</title>
+    <link rel="stylesheet" href="styles.css" />
+    <script src="scripts.js" defer></script>
+  </head>
+  <body>
+    <nav>
+      <ul>
+        <li>
+          <a href="#home" class="active" onclick="showPage('home')">Home</a>
+        </li>
+        <li><a href="#hobbies" onclick="showPage('hobbies')">Hobbies</a></li>
+        <li><a href="#birthday" onclick="showPage('birthday')">Birthday</a></li>
+        <li><a href="#contact" onclick="showPage('contact')">Contact Us</a></li>
+        <li>
+          <a href="#countries" onclick="showPage('countries')">Countries</a>
+        </li>
+        <li><a href="#cv" onclick="showPage('cv')">CV</a></li>
+      </ul>
+    </nav>
+
+    <section id="home" class="page">
+      <h1>Welcome to My Homepage</h1>
+      <p>Here you can find information about me.</p>
+      <img src="JOE_0930.jpg" alt="a pic of me" class="small-image" />
+      <p>My name: Adham Haitham Eid</p>
+      <p>My Age: 19y</p>
+    </section>
+
+    <section id="hobbies" class="page" style="display: none">
+      <h2>My Hobbies</h2>
+      <div class="hobby-images">
+        <img src="coding.jpeg" alt="coding" />
+        <p>coding</p>
+        <img src="gym.jpeg" alt="GYM" />
+        <p>GYM</p>
+        <img src="writing.jpeg" alt="writing" />
+        <p>writing</p>
+      </div>
+    </section>
+
+    <section id="birthday" class="page" style="display: none">
+      <h2>My Birthday</h2>
+      <img
+        id="birthday-image"
+        src="bd.jpeg"
+        alt="Birthday"
+        class="small-image"
+      />
+      <p>My Birthday is on 01/06/2005</p>
+      <div id="message-form" style="display: none">
+        <textarea placeholder="Write a kind message"></textarea>
+        <button onclick="submitMessage()">Submit</button>
+      </div>
+    </section>
+
+    <section id="contact" class="page" style="display: none">
+      <h2>Contact Us</h2>
+      <form>
+        <label for="name">Name:</label>
+        <input type="text" id="name" name="name" />
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" />
+        <label for="message">Message:</label>
+        <textarea id="message" name="message"></textarea>
+        <button type="submit">Send</button>
+      </form>
+      <div class="social-media">
+        <img src="facebook.png" alt="Facebook" />
+        <img src="twitter.png" alt="Twitter" />
+        <img src="instagram.jpeg" alt="Instagram" />
+      </div>
+    </section>
+
+    <section id="countries" class="page" style="display: none">
+      <h2>Countries I Wish to Visit</h2>
+      <div class="slider">
+        <div class="slide">
+          <img src="america.png" alt="america" />
+          <p>america</p>
+        </div>
+        <div class="slide">
+          <img src="london.png" alt="london" />
+          <p>london</p>
+        </div>
+        <div class="slide">
+          <img src="hungary.png" alt="hungary" />
+          <p>hungary</p>
+        </div>
+      </div>
+    </section>
+
+    <section id="cv" class="page" style="display: none">
+      <h3>Personal Info: ...</h3>
+      <p>My name: Adham Haitham Eid</p>
+      <p>My Age: 19y</p>
+      <h3>Skills: ...</h3>
+      <p>programming</p>
+      <p>writing</p>
+      <p>searching</p>
+      <h3>Experience: ...</h3>
+      <p>1 year in web programming</p>
+    </section>
+  </body>
+</html>

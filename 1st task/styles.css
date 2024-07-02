@@ -1,0 +1,75 @@
+body {
+  font-family: Arial, sans-serif;
+}
+
+nav ul {
+  display: flex;
+  list-style: none;
+  background-color: #333;
+  padding: 0;
+  margin: 0;
+}
+
+nav ul li {
+  margin: 0 15px;
+}
+
+nav ul li a {
+  color: white;
+  text-decoration: none;
+  padding: 14px 20px;
+  display: block;
+  position: relative;
+}
+
+nav ul li a.active::after {
+  content: "";
+  display: block;
+  width: 100%;
+  height: 2px;
+  background-color: blue;
+  position: absolute;
+  bottom: -2px;
+  left: 0;
+}
+
+section {
+  padding: 20px;
+  margin: 20px 0;
+  border: 1px solid #ccc;
+}
+
+.small-image {
+  width: 200px;
+  height: auto;
+}
+
+.hobby-images img {
+  width: 150px;
+  margin: 10px;
+  transition: transform 0.3s;
+}
+
+.hobby-images img:hover {
+  transform: scale(1.1);
+}
+
+.slider {
+  display: flex;
+  overflow-x: auto;
+}
+
+.slide {
+  flex: none;
+  margin: 10px;
+  text-align: center;
+}
+
+.slide img {
+  width: 300px;
+}
+
+.social-media img {
+  width: 30px;
+  margin: 0 10px;
+}
