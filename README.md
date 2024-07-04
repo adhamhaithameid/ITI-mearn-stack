@@ -6,11 +6,11 @@
 </h3>
 
 - there is a folder for [Certificates](./Certificates)
-    - I have [HTML&CSS](./Certificates/HTML&CSS) Certificate
-    - I have [JavaScript](./Certificates/JavaScript) Certificate
-    - I have [JavaScript&ES6](./Certificates/JavaScript&ES6) Certificate
-    - I have [React JS](./Certificates/ReactJS) Certificate
-    - I have [TypeScript](./Certificates/TypeScript) Certificate
+    - I have [HTML&CSS](./Certificates/HTML&CSS_Course_Certificate) Certificate
+    - I have [JavaScript](./Certificates/Javascript_Course_Certificate) Certificate
+    - I have [JavaScript&ES6](./Certificates/JavaScript&ES6_Course_Certificate_En) Certificate
+    - I have [React JS](./Certificates/React_Course_Certificate_En) Certificate
+    - I have [TypeScript](./Certificates/TypeScript_Course_Certificate) Certificate
 
 - there is a folder for every [Task](./Tasks)
     -  [HTML & CSS Task](./Tasks/HTML&CSSTask) is done
