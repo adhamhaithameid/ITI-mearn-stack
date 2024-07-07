@@ -14,3 +14,4 @@
 
 - there is a folder for every [Task](./Tasks)
     -  [HTML & CSS Task](./Tasks/HTML_&_CSS_Task) is done
+    -  [JavaScript Task](./Tasks/JavaScript_task) is done
