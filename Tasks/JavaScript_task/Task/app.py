@@ -20,8 +20,9 @@ def create_tables():
 
 @app.route('/')
 def index():
-    tasks = Task.query.order_by(Task.deadline.asc()).all()
-    return render_template('index.html', tasks=tasks)
+    unfinished_tasks = Task.query.filter_by(complete=False).order_by(Task.deadline.asc()).all()
+    finished_tasks = Task.query.filter_by(complete=True).order_by(Task.deadline.asc()).all()
+    return render_template('index.html', unfinished_tasks=unfinished_tasks, finished_tasks=finished_tasks)
 
 @app.route('/add', methods=['POST'])
 def add():

@@ -13,8 +13,24 @@
             <p class="description">A simple and user-friendly task manager to keep track of your to-dos.</p>
         </header>
         <main>
+            <h2>Unfinished Tasks</h2>
             <ul class="task-list">
-                {% for task in tasks %}
+                {% for task in unfinished_tasks %}
+                <li class="task {{ 'complete' if task.complete }}">
+                    <div class="task-content">
+                        <span>{{ task.task }}</span>
+                        <div class="task-actions">
+                            <a href="#" class="complete-task" data-id="{{ task.id }}">Complete</a>
+                            <a href="{{ url_for('edit', task_id=task.id) }}">Edit</a>
+                            <a href="#" class="delete-task" data-id="{{ task.id }}">Delete</a>
+                        </div>
+                    </div>
+                </li>
+                {% endfor %}
+            </ul>
+            <h2>Finished Tasks</h2>
+            <ul class="task-list">
+                {% for task in finished_tasks %}
                 <li class="task {{ 'complete' if task.complete }}">
                     <div class="task-content">
                         <span>{{ task.task }}</span>
