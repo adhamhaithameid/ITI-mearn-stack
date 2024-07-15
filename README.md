@@ -6,7 +6,7 @@
 </h3>
 
 <details>
-<summary><strong>There is a folder for Certificates</strong></summary>
+<summary><strong>There is a folder for Certificates 🏆</strong></summary>
 
 - I have [HTML&CSS](./Certificates/HTML&CSS_Course_Certificate.pdf) Certificate
 - I have [JavaScript](./Certificates/JavaScript_Course_Certificate.pdf) Certificate
@@ -17,7 +17,7 @@
 </details>
 
 <details>
-<summary><strong>There is a folder for every Task</strong></summary>
+<summary><strong>There is a folder for every Task 🗂️</strong></summary>
 
 - [HTML & CSS Task](./Tasks/HTML_&_CSS_Task) is done ✅
 - [JavaScript Task](./Tasks/JavaScript_task) is done ✅
