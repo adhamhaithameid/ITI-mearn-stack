@@ -1,12 +1,12 @@
 <h1 align="center">
-  ITI-mern_stack
+  ITI Mearn Stack
 </h1>
 <h3 align="center">
   this repository is just a place to put all tasks and Certificates required for ITI Beni Suef Summer T24 -25 Mearn (Mahara) G1 training
 </h3>
 
 <details>
-<summary><strong>There is a folder for Certificates 🏆</strong></summary>
+<summary><strong>Go Check These Certificates 🏆</strong></summary>
 
 - I have [HTML&CSS](./Certificates/HTML&CSS_Course_Certificate.pdf) Certificate
 - I have [JavaScript](./Certificates/JavaScript_Course_Certificate.pdf) Certificate
@@ -17,7 +17,7 @@
 </details>
 
 <details>
-<summary><strong>There is a folder for every Task 🗂️</strong></summary>
+<summary><strong>Go Check These Tasks 🗂️</strong></summary>
 
 - [HTML & CSS Task](./Tasks/HTML_&_CSS_Task) is done ✅
 - [JavaScript Task](./Tasks/JavaScript_task) is done ✅
