@@ -13,5 +13,6 @@
     - I have [TypeScript](./Certificates/TypeScript_Course_Certificate.pdf) Certificate
 
 - there is a folder for every [Task](./Tasks)
-    -  [HTML & CSS Task](./Tasks/HTML_&_CSS_Task) is done
-    -  [JavaScript Task](./Tasks/JavaScript_task) is done
+    -  [HTML & CSS Task](./Tasks/HTML_&_CSS_Task) is done✅
+    -  [JavaScript Task](./Tasks/JavaScript_task) is done✅
+    -  [ES6 Task](./Tasks/ES6_task) is done✅
