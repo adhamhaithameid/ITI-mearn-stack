@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Tips Page</title>
+    <link rel="stylesheet" href="styles.css" />
+    <style>
+      body {
+        background: #f0f0f0;
+        color: #333;
+        text-align: center;
+        padding: 20px;
+      }
+
+      button {
+        background: #007bff;
+        border: none;
+        color: white;
+        padding: 15px 32px;
+        text-align: center;
+        text-decoration: none;
+        display: inline-block;
+        font-size: 16px;
+        margin: 4px 2px;
+        cursor: pointer;
+        border-radius: 8px;
+        transition: background-color 0.3s;
+      }
+
+      button:hover {
+        background: #0056b3;
+      }
+
+      #tip-display {
+        font-size: 1.5em;
+        margin-top: 20px;
+      }
+
+      #all-tips {
+        display: none;
+        text-align: left;
+        margin-top: 20px;
+        background: #fff;
+        padding: 20px;
+        border-radius: 10px;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+      }
+    </style>
+  </head>
+  <body>
+    <h1>Tips</h1>
+    <div id="tip-display"></div>
+    <button id="show-all-tips">Show All Tips</button>
+    <button id="start-interval">Start Interval</button>
+    <button id="next-tip">Display Next Tip</button>
+    <button id="prev-tip">Display Previous Tip</button>
+    <div id="all-tips">
+      <h2>All Tips</h2>
+      <ul id="tips-list"></ul>
+    </div>
+
+    <footer>
+      <p>
+        ✨ Made by
+        <a href="https://github.com/adhamhaithameid">Adham Haitham</a> ✨
+      </p>
+    </footer>
+
+    <script>
+      function* tipGenerator() {
+        const tips = [
+          "Stay hydrated.",
+          "Take breaks.",
+          "Write clean code.",
+          "Comment your code.",
+          "Use version control.",
+          "Test your code.",
+          "Learn new technologies.",
+          "Read documentation.",
+          "Refactor regularly.",
+          "Collaborate with others.",
+        ];
+        let index = 0;
+        while (true) {
+          yield tips[index];
+          index = (index + 1) % tips.length;
+        }
+      }
+
+      const tips = tipGenerator();
+      const tipsArray = [
+        "Stay hydrated.",
+        "Take breaks.",
+        "Write clean code.",
+        "Comment your code.",
+        "Use version control.",
+        "Test your code.",
+        "Learn new technologies.",
+        "Read documentation.",
+        "Refactor regularly.",
+        "Collaborate with others.",
+      ];
+      let currentIndex = 0;
+
+      function displayTip(tip) {
+        document.getElementById("tip-display").innerText = tip;
+      }
+
+      document.getElementById("show-all-tips").addEventListener("click", () => {
+        let allTips = "";
+        for (const tip of tipsArray) {
+          allTips += `${tip}\n`;
+        }
+        alert(allTips);
+
+        const tipsList = document.getElementById("tips-list");
+        tipsList.innerHTML = "";
+        tipsArray.forEach((tip) => {
+          const listItem = document.createElement("li");
+          listItem.textContent = tip;
+          tipsList.appendChild(listItem);
+        });
+        document.getElementById("all-tips").style.display = "block";
+      });
+
+      document
+        .getElementById("start-interval")
+        .addEventListener("click", () => {
+          setInterval(() => {
+            displayTip(tips.next().value);
+          }, 3000);
+        });
+
+      document.getElementById("next-tip").addEventListener("click", () => {
+        currentIndex = (currentIndex + 1) % tipsArray.length;
+        displayTip(tipsArray[currentIndex]);
+      });
+
+      document.getElementById("prev-tip").addEventListener("click", () => {
+        currentIndex = (currentIndex - 1 + tipsArray.length) % tipsArray.length;
+        displayTip(tipsArray[currentIndex]);
+      });
+
+      displayTip(tips.next().value);
+    </script>
+  </body>
+</html>

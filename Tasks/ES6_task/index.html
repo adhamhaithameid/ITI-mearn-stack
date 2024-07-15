@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>JavaScript and TypeScript Task</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <!-- Sum Alert Section -->
+    <section id="sum-alert">
+      <h2 class="toggle-heading">
+        Sum Alert <span class="triangle">&#9654;</span>
+      </h2>
+      <div class="toggle-content">
+        <form id="sum-form">
+          <input
+            type="number"
+            id="num1"
+            placeholder="Enter first number"
+            required
+          />
+          <input
+            type="number"
+            id="num2"
+            placeholder="Enter second number"
+            required
+          />
+          <button type="submit">Calculate Sum</button>
+        </form>
+      </div>
+    </section>
+
+    <!-- Loop Examples Section -->
+    <section id="loop-examples">
+      <h2 class="toggle-heading">
+        Loop Examples <span class="triangle">&#9654;</span>
+      </h2>
+      <div class="toggle-content">
+        <strong>for...in:</strong><br />
+        The for...in statement iterates over all enumerable properties of an
+        object that are keyed by strings (ignoring ones keyed by Symbols),
+        including inherited enumerable properties.<br />
+        Example:
+        <pre><code>for (const index in array) {
+    console.log(index, array[index]);
+}</code></pre>
+        <strong>for...of:</strong><br />
+        The for...of statement creates a loop iterating over iterable objects,
+        including: built-in String, Array, array-like objects, Map, Set, and
+        user-defined iterables.<br />
+        Example:
+        <pre><code>for (const value of array) {
+    console.log(value);
+}</code></pre>
+        <strong>.forEach():</strong><br />
+        The forEach() method executes a provided function once for each array
+        element.<br />
+        Example:
+        <pre><code>array.forEach((value, index) => {
+    console.log(index, value);
+});</code></pre>
+      </div>
+    </section>
+
+    <!-- Spread Operator Section -->
+    <section id="spread-operator">
+      <h2 class="toggle-heading">
+        Spread Operator <span class="triangle">&#9654;</span>
+      </h2>
+      <div class="toggle-content">
+        <div id="spread-result"></div>
+      </div>
+    </section>
+
+    <!-- Student Class Section -->
+    <section id="student-class">
+      <h2 class="toggle-heading">
+        Student Class <span class="triangle">&#9654;</span>
+      </h2>
+      <div class="toggle-content">
+        <form id="student-form">
+          <input type="text" id="name" placeholder="Name" required />
+          <input
+            type="text"
+            id="university"
+            placeholder="University"
+            required
+          />
+          <input type="text" id="faculty" placeholder="Faculty" required />
+          <input
+            type="text"
+            id="finalGrade"
+            placeholder="Final Grade"
+            required
+          />
+          <button type="submit">Create Student</button>
+        </form>
+        <div id="student-data"></div>
+      </div>
+    </section>
+
+    <section id="tips-section">
+      <h2>Tips Section</h2>
+      <button id="tips-button">Go to Tips</button>
+    </section>
+
+    <footer>
+      <p>
+        ✨ Made by
+        <a href="https://github.com/adhamhaithameid">Adham Haitham</a> ✨
+      </p>
+    </footer>
+
+    <script src="script.js"></script>
+  </body>
+</html>
