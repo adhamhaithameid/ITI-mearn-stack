@@ -13,6 +13,7 @@
 - I have [JavaScript&ES6](./Certificates/JavaScript&ES6_Course_Certificate.pdf) Certificate
 - I have [React JS](./Certificates/React_Course_Certificate.pdf) Certificate
 - I have [TypeScript](./Certificates/TypeScript_Course_Certificate.pdf) Certificate
+- I have [Mongo db](./Certificates/MongoDB_Course_Certificate.pdf) Certificate
 
 </details>
 
@@ -22,5 +23,6 @@
 - [HTML & CSS Task](./Tasks/HTML_&_CSS_Task) is done ✅
 - [JavaScript Task](./Tasks/JavaScript_task) is done ✅
 - [ES6 Task](./Tasks/ES6_task) is done ✅
+- [React Task](./Tasks/React_task) is done ✅
 
 </details>
