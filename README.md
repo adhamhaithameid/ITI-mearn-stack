@@ -35,3 +35,9 @@
   [![React Task Video](https://img.youtube.com/vi/7isSoldO0vk/0.jpg)](https://youtu.be/7isSoldO0vk "Wanna See a Demo?")
 
 </details>
+
+```
+=> You Can Hover your mouse Over Any Link to see the tooltip
+=> There are Links to every Certificate, Task
+=> There are Demo Videos for Every Task, Click the Image of the Task to Access the Video on YouTube  
+```
